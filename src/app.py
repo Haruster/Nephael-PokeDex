@@ -35,6 +35,8 @@ text_id_name = tk.Text(window, height = 1)
 text_id_name.config(font = ("Arial", 20))
 text_id_name.pack(padx = 10, pady = 10)
 
-
+btn_load = tk.Button(window, text = "Load Pokemon")
+btn_load.config(font = ("Arial", 20))
+btn_load.pack(padx = 10, pady = 10)
 
 window.mainloop()
