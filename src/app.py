@@ -32,6 +32,8 @@ def load_pokemon():
     pokemon = pypokedex.get(name = text_id_name.get(1.0, "end-1c"))
 
     http = urllib3.PoolManager()
+    response = http.request('GET', pokemon.sprites.front.get('default'))
+    image = PIL.Image.open(BytesIO(response.data))
 
 label_id_name = tk.Label(window, text = "ID or Name")
 label_id_name.config(font = ("Arial", 20))
