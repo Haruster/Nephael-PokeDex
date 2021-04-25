@@ -29,6 +29,10 @@ pokemon_types.pack(padx = 10, pady = 10)
 
 def load_pokemon():
 
+    pokemon = pypokedex.get(name = text_id_name.get(1.0, "end-1c"))
+
+    http = urllib3.PoolManager()
+
 label_id_name = tk.Label(window, text = "ID or Name")
 label_id_name.config(font = ("Arial", 20))
 label_id_name.pack(padx = 10, pady = 10)
