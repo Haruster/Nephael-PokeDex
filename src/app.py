@@ -35,6 +35,10 @@ def load_pokemon():
     response = http.request('GET', pokemon.sprites.front.get('default'))
     image = PIL.Image.open(BytesIO(response.data))
 
+    img = PIL.ImageTk.PhotoImage(image)
+    pokemon_image.config(image = img)
+    pokemon_image.image = img
+
 label_id_name = tk.Label(window, text = "ID or Name")
 label_id_name.config(font = ("Arial", 20))
 label_id_name.pack(padx = 10, pady = 10)
