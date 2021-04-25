@@ -17,6 +17,7 @@ title_label.config(font = ("Arial", 32))
 title_label.pack(padx = 10, pady = 10)
 
 pokemon_image = tk.Label(window)
+pokemon_image.config(font = ("Arial", 40))
 pokemon_image.pack(padx = 10, pady = 10)
 
 pokemon_information = tk.Label(window)
