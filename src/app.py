@@ -15,3 +15,5 @@ window.config(padx = 10, pady = 10)
 title_label = tk.Label(window, text = "Kinesys PokeDex")
 title_label.config(font = ("Arial", 32))
 title_label.pack(padx = 10, pady = 10)
+
+window.mainloop()
