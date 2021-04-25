@@ -9,3 +9,5 @@ from io import BytesIO
 
 window = tk.Tk();
 window.geometry("600x500")
+window.title("Kinesys PokeDex")
+window.config(padx = 10, pady = 10)
