@@ -16,4 +16,7 @@ title_label = tk.Label(window, text = "Kinesys PokeDex")
 title_label.config(font = ("Arial", 32))
 title_label.pack(padx = 10, pady = 10)
 
+pokemon_image = tk.Label(window)
+pokemon_image.pack(padx = 10, pady = 10)
+
 window.mainloop()
