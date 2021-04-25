@@ -41,7 +41,7 @@ def load_pokemon():
     pokemon_image.image = img
 
     pokemon_information.config(text = f"{pokemon.dex} - {pokemon.name}")
-    pokemon_types.config(text = " - ".join([t for t in pokemon.types]))
+    pokemon_types.config(text = " - ".join([t for t in pokemon.types]).title())
 
 label_id_name = tk.Label(window, text = "ID or Name")
 label_id_name.config(font = ("Arial", 20))
