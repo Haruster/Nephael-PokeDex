@@ -27,4 +27,10 @@ pokemon_types = tk.Label(window)
 pokemon_types.config(font = ("Arial", 20))
 pokemon_types.pack(padx = 10, pady = 10)
 
+label_id_name = tk.Label(window, text = "ID or Name")
+label_id_name.config(font = ("Arial", 20))
+label_id_name.pack(padx = 10, pady = 10)
+
+
+
 window.mainloop()
