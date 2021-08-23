@@ -1,2 +1,2 @@
-# KInesys-PokeDex
+# Nephael-PokeDex
 Python Pokemon Project
